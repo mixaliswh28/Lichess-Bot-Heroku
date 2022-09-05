@@ -3,7 +3,7 @@ import os
 import os.path
 import logging
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(__Stockfish_13_pro_max__)
 
 
 def load_config(config_file):
