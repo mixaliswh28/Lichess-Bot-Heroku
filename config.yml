@@ -1,13 +1,14 @@
-token: "lip_SO7oFoJh3Y0vm2ySGXPo"    # Lichess OAuth2 Token.
+token: "lip_r7VNy6DLjfsJVpHUWG3E"    # Lichess OAuth2 Token.
 url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
   dir: "./engines/"          # Directory containing engines, relative to this project.
   name:"sf"        # Binary name of the engine to use.
+  sfname: "sfs"
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
-    enabled: false           # Activate polyglot book.
+    enabled: true            # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
         - engines/book1.bin
@@ -85,4 +86,4 @@ challenge:                   # Incoming challenges.
   modes:                     # Game modes to accept.
     - casual                 # Unrated games.
     - rated                  # Rated games - must comment if the engine doesn't try to win.
-sfname:"sfs"
+
